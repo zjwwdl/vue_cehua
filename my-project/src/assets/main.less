@@ -1,0 +1,105 @@
+.px2rem(@name, @px) {
+    @{name}: @px / 100 * 1rem;
+}
+
+@base-nomalfontsize:0.26rem;
+
+@fm: "PingFangSC-Regular";
+@fm-semi: "PingFangSC-Semibold";
+@fm-light: "PingFangSC-Light";
+@fm-thin: "PingFangSC-Thin";
+@fm-ultra: "PingFangSC-Ultralight";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: @fm;
+
+  &.semi {
+    font-family: @fm-semi;
+  }
+
+  &.light {
+    font-family: @fm-light;
+  }
+
+  &.thin {
+    font-family: @fm-thin;
+  }
+
+  &.ultra {
+    font-family: @fm-ultra;
+  }
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+}
+
+h1 {
+  .px2rem(font-size, 36);
+}
+
+h2 {
+  .px2rem(font-size, 32);
+}
+
+h3 {
+  .px2rem(font-size, 28);
+}
+
+h4,
+
+p {
+  .px2rem(font-size, 36);
+}
+
+h5 {
+  .px2rem(font-size, 22);
+}
+
+h6 {
+  .px2rem(font-size, 18);
+}
+
+a {
+  text-decoration: none;
+  img {
+    border: 0;
+  }
+}
+samp{
+  font-style: normal;
+}
+
+.v-modal {
+  display: none;
+}
